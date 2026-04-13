@@ -99,15 +99,15 @@ let projectCounter=0,expCounter=0;
 
 /* ===== INIT ===== */
 function init(){
-  document.getElementById('inp_name').value='Abhinav Tiwari';
+  document.getElementById('inp_name').value='Vikram Adhikari';
   document.getElementById('inp_role').value='Full Stack Developer & Digital Architect';
   document.getElementById('inp_bio').value="I'm a full-stack developer obsessed with building experiences at the intersection of art and engineering. From pixel-perfect frontends to distributed backend systems — I build things that are fast, beautiful, and built to last.";
   document.getElementById('inp_location').value='India';
-  document.getElementById('inp_email').value='abhinav@tiwari.dev';
-  document.getElementById('inp_github').value='https://github.com/abhinavtiwari';
-  document.getElementById('inp_linkedin').value='https://linkedin.com/in/abhinavtiwari';
-  document.getElementById('inp_twitter').value='https://twitter.com/abhinavtiwari';
-  document.getElementById('inp_website').value='https://abhinavtiwari.dev';
+  document.getElementById('inp_email').value='vikram@adhikari.dev';
+  document.getElementById('inp_github').value='https://github.com/vikramadhikari';
+  document.getElementById('inp_linkedin').value='https://linkedin.com/in/vikramadhikari';
+  document.getElementById('inp_twitter').value='https://twitter.com/vikramadhikari';
+  document.getElementById('inp_website').value='https://vikramadhikari.dev';
 
   const demoSkills=[
     {name:'JavaScript / TypeScript',level:'expert'},
@@ -119,10 +119,11 @@ function init(){
   ];
   demoSkills.forEach(s=>{state.skills.push(s);renderSkillTag(s);});
 
-  addProject({name:'NEURAL DASHBOARD',desc:'Real-time AI monitoring platform with **WebSocket streams**, interactive 3D visualizations, and predictive anomaly detection. Handles 2M+ events per second.',tech:'React, Three.js, Python, Kafka, Redis',url:'#',github:'https://github.com/abhinavtiwari',emoji:'🧠'});
-  addProject({name:'QUANTUM COMMERCE',desc:'Next-gen e-commerce engine with **AI-powered recommendations** and sub-100ms load times globally via edge computing.',tech:'Next.js, Edge, AI, Tailwind',url:'#',github:'https://github.com/abhinavtiwari',emoji:'⚡'});
-  addProject({name:'CIPHER PROTOCOL',desc:'End-to-end encrypted messaging with **zero-knowledge proofs** and decentralized identity management.',tech:'Node.js, Web3, Rust, Cryptography',url:'#',github:'https://github.com/abhinavtiwari',emoji:'🔐'});
-  addProject({name:'SYNTH UI KIT',desc:'Open-source futuristic component library — **80+ animated components** with full TypeScript and Storybook docs.',tech:'React, TypeScript, Storybook, CSS',url:'#',github:'https://github.com/abhinavtiwari',emoji:'🎨'});
+ addProject({name:'PORTOFOLIO GENERATOR',desc:'Responsive personal portfolio with modern UI and smooth animations to showcase projects and skills.',emoji:'💼'});
+  addProject({name:'To-Do List App',desc:'Task management app with add, delete, and completion tracking using local storage.',emoji:'✅'});
+  addProject({name:'Weather App ',desc:'Fetches real-time weather data using API and displays temperature and conditions.',emoji:'🌦️'});
+  addProject({name:'Basic Chat App',desc:' Simple real-time chat application using WebSocket for instant messaging',emoji:'📱'});
+
 
   addExperience({title:'Senior Frontend Engineer',org:'Tech Startup',date:'2023 – Present',desc:'Led the Dashboard redesign improving user satisfaction by 34%. Built real-time collaboration features used by 50k+ developers. Mentored 4 junior engineers.'});
   addExperience({title:'Full Stack Developer',org:'Freelance / Open Source',date:'2021 – 2023',desc:'Shipped 24+ projects across web, backend, and AI domains. Built distributed systems handling millions of events/day. 12+ happy clients globally.'});
@@ -356,7 +357,7 @@ function updatePreview(){
     <div class="portfolio-section"><div class="section-title">Featured Projects</div>${projectsHTML}</div>
     <div class="portfolio-section"><div class="section-title">Experience</div>${expHTML}</div>
     <div class="portfolio-section"><div class="section-title">Get In Touch</div>${contactHTML}</div>
-  `;
+    <div class="preview-footer">Built with <span>Portfolio_Generator</span> · Crafted by Team NEPHTHYS</div>`;
 
   if(state.layout==='bars'){
     setTimeout(()=>{
