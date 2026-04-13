@@ -356,7 +356,7 @@ function updatePreview(){
     <div class="portfolio-section"><div class="section-title">Featured Projects</div>${projectsHTML}</div>
     <div class="portfolio-section"><div class="section-title">Experience</div>${expHTML}</div>
     <div class="portfolio-section"><div class="section-title">Get In Touch</div>${contactHTML}</div>
-    <div class="preview-footer">Built with <span>PortfolioForge</span> · Crafted by Abhinav Tiwari</div>`;
+  `;
 
   if(state.layout==='bars'){
     setTimeout(()=>{
