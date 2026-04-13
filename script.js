@@ -99,7 +99,7 @@ let projectCounter=0,expCounter=0;
 
 /* ===== INIT ===== */
 function init(){
-  document.getElementById('inp_name').value='Vikram Adhikariiii ';
+  document.getElementById('inp_name').value='Vikram Adhikari';
   document.getElementById('inp_role').value='Full Stack Developer & Digital Architect';
   document.getElementById('inp_bio').value="I'm a full-stack developer obsessed with building experiences at the intersection of art and engineering. From pixel-perfect frontends to distributed backend systems — I build things that are fast, beautiful, and built to last.";
   document.getElementById('inp_location').value='India';
